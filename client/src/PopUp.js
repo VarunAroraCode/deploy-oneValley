@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal'
-import fruitImages from './images/fruitImages';
+import fruitImages from './images/fruitImages.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class PopUp extends React.Component{

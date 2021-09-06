@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import fruitImages from './images/fruitImages';
+import fruitImages from './images/fruitImages.js';
 import PopUp from './PopUp.js';
 import './App.css';
 
@@ -28,7 +28,7 @@ class App extends Component {
 
   //get info from fruits api
   componentDidMount() {
-    axios.get(`http://localhost:5000/fruits`)
+    axios.get("https://www.fruityvice.com/api/fruit/all")
       .then(res => {
         const fruit = res.data
         this.setState({ data:fruit });
